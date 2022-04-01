@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.FriendRequestController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="label_welcome" alignment="CENTER" layoutX="-1.0" layoutY="129.0" prefHeight="22.0" prefWidth="201.0" text="Your friend requests">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_back" layoutX="14.0" layoutY="352.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="50.0" text="Back" />
+            <Button fx:id="button_accept" layoutX="14.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="70.0" text="accept" />
+            <Button fx:id="button_decline" layoutX="114.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="70.0" text="decline" />
+            <ImageView fitHeight="97.0" fitWidth="76.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock-logo.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="223.0" prefHeight="18.0" prefWidth="201.0" text="Select an option:" />
+         </children></AnchorPane>
+      <TableView fx:id="tv_friend_request" prefHeight="400.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="col_username" prefWidth="207.20001220703125" text="Username" />
+            <TableColumn fx:id="col_date" prefWidth="192.800048828125" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</HBox>
